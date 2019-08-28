@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="elements">
+            <div class="tabs">
+                <div class="tab all active-tab" onclick="showOnlyState('all'); setActive(this);">All</div>
+                <div class="tab active" onclick="showOnlyState(true); setActive(this);">Active</div>
+                <div class="tab done" onclick="showOnlyState(false); setActive(this);">Done</div>
+            </div>
+            <div class="append">
+                <input type="text" placeholder="write what to do">
+            </div>
+            <div class="todoes" style="color:lightgray; text-align: center; font-family: Arial">
+                No tasks yet...
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
